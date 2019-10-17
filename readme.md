@@ -88,7 +88,7 @@ Deletes an existing entry from the roster. Returns `true`;
 
 #### parameters
 Name | Type | Required | Description
-:- | :- | :: | :-
+:--- | :--- | :---: | :---
 id | String | √ | User-defined key name. Must match id in `registerBoundary`.
 
 #### example
@@ -97,10 +97,7 @@ boundary.removeBoundary('breakpointOne');
 ```
 
 ### listenStart
-Adds a `resize` event listener to `window`. Will not add redundant listeners.
-
-#### parameters
-none
+Adds a `resize` event listener to `window`. Will not add redundant listeners. Takes no params.
 
 #### example
 ```js
@@ -108,10 +105,7 @@ boundary.listenStart();
 ```
 
 ### listenEnd
-Removes `resize` listener from window, if listener exists.
-
-#### parameters
-none
+Removes `resize` listener from window, if listener exists. Takes no params.
 
 #### example
 ```js
@@ -119,10 +113,7 @@ boundary.listenEnd();
 ```
 
 ### isListening
-Reports whether there is an active listener or not. Returns Boolean.
-
-#### parameters
-none
+Reports whether there is an active listener or not.  Takes no params. Returns Boolean.
 
 #### example
 ```js
@@ -132,9 +123,7 @@ boundary.isListening();
 ## named export methods
 
 ### getDimensions
-Returns an object literal `{height: [Number], width: [Number]}` of the current page dimensions.
-#### parameters
-none
+ Takes no params. Returns an object literal `{height: [Number], width: [Number]}` of the current page dimensions.
 
 #### example
 ```js
