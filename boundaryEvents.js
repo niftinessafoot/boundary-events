@@ -126,10 +126,11 @@ function boundaryEvents(config){
           key : key,
           width : dims.width,
           height : dims.height,
-          pastBoundary : pastBoundary,
+          pastBoundary : !pastBoundary,
           modified : !isHeight ? 'width' : 'height',
           data : data
         };
+
         try{
 
           if(!parent){
